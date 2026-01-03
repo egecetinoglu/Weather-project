@@ -13,7 +13,7 @@ if temperature >= 40:
     print("Don't forget to drink water!")
 elif temperature > 30: 
     print("It's a hot day.")
-    print("Enjoy the. sun!")
+    print("Enjoy the sun!")
 elif temperature >= 20:
     print("The weather is relatively nice.")
     print("Time for a picnic!")
@@ -32,13 +32,13 @@ print("-")
 print(f"Wind speed is at {wind_velocity} km/h, towards the {wind_direction} direction.")
 
 # wind logic
-if wind_velocity > 30:
+if wind_velocity >= 30:
     print("Extreme winds are expected today.")
-elif wind_velocity > 20:
+elif wind_velocity >= 20:
     print("It's a windy day.")
 elif wind_velocity < 20 and wind_velocity > 10:
     print("It's a little windy.")
-elif wind_velocity < 10:
+elif wind_velocity < 10 or wind_velocity == 0:
     print("No significant winds today.")
 
 print("-")
